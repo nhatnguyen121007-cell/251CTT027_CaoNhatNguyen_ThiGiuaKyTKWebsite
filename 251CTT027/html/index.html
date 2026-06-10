@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <main>
+      <section class="banner">
+        <div class="slider">
+          <img src="img2.jpg" class="slide active" />
+          <img src="img3.jpg" class="slide" />
+        </div>
+        <button class="btn-prev" onclick="changeSlide(-1)"></button>
+        <button class="btn-next" onclick="changeSlide(1)"></button>
+      </section>
+<header class="header">
+      <div class="logo"><img src="img1.jpg" alt="Avatar" />
+      </div>
+      <h2>điện thoại di động</h2>
+      <nav class="nav">
+        
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+
+          <li><a href="#products">Sản phẩm</a></li>
+          
+          <li><a href="#footer">Liên hệ</a></li>
+        </ul>
+      </nav>
+        </div>
+    </header>
+      <section id="products" class="product-section">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-grid">
+          <article class="card">
+            <img src="images1.jpg" />
+            <h3>iPhone 15 Pro Max</h3>
+            <p>28.940.000đ</p>
+            <button onclick="openModal('iPhone 15 Pro Max')">Mua ngay</button>
+          </article>
+          <article class="card">
+            <img src="images2.jpg" />
+            <h3>Galaxy S24 Ultra</h3>
+            <p>27.490.000đ</p>
+            <button
+              onclick="openModal('Galaxy S24 Ultra', 'Tích hợp Galaxy AI')"
+            >
+              Mua ngay
+            </button>
+          </article>
+          <article class="card">
+            <img src="images3.jpg" />
+            <h3>Iphone 17 Pro Max</h3>
+            <p>37.999.000đ</p>
+            <button onclick="openModal('Iphone 17 Pro Max')">Mua ngay</button>
+          </article>
+          <article class="card">
+            <img src="images4.jpg" />
+            <h3>ZTE Nubia Red Magic 11Pro Plus</h3>
+            <p>24.990.000đ</p>
+            <button onclick="openModal('ZTE Nubia Red Magic 11Pro Plus ')">
+              Mua ngay
+            </button>
+          </article>
+          <article class="card">
+            <img src="images5.jpg" />
+            <h3>Asus Rog Phone 9 Pro</h3>
+            <p>26.990.000đ</p>
+            <button onclick="openModal('Asus Rog Phone 9 Pro')">
+              Mua ngay
+            </button>
+          </article>
+          <article class="card">
+            <img src="images6.jpg" />
+            <h3>Samsung Galaxy S26 Ultra</h3>
+            <p>35.999.000đ</p>
+            <button onclick="openodal('Samsung Galaxy S26 Ultra')">
+              Mua ngay
+            </button>
+          </article>
+          <article class="card">
+            <img src="images7.jpg" />
+            <h3>Realme 16 Pro Plus 5G</h3>
+            <p>13.940.000đ</p>
+            <button onclick="openModal('Realme 16 Pro Plus 5G')">
+              Mua ngay
+            </button>
+          </article>
+          <article class="card">
+            <img src="images8.jpg" />
+            <h3>Iphone 16 Pro Max</h3>
+            <p>31.490.000đ</p>
+            <button onclick="openModal('Iphone 16 Pro Max')">Mua ngay</button>
+          </article>
+          <article class="card">
+            <img src="images9.jpg" />
+            <h3>Xgear-Laptop Gaming MSI Crosshair 16 HX AI D2XWGKG</h3>
+            <p>47.490.000đ</p>
+            <button
+              onclick="
+                openModal('Xgear-Laptop Gaming MSI Crosshair 16 HX AI D2XWGKG')
+              "
+            >
+              Mua ngay
+            </button>
+          </article>
+          <article class="card">
+            <img src="images10.jpg" />
+            <h3>Laptop Lenovo Gaming LOQ 15IRX10 i7</h3>
+            <p>37.990.000đ</p>
+            <button onclick="openModal('Laptop Lenovo Gaming LOQ 15IRX10 i7')">
+              Mua ngay
+            </button>
+          </article>
+        </div>
+      </section>
+      <nav>
+        <button>
+        <h2> Xem Thêm</h2>
+        </button>
+      </nav>
+      <section class="news">
+        <h2>Tin tức công nghệ</h2>
+        <p>Cập nhật xu hướng công nghệ mới nhất trong ngày</p>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <p>Liên hệ: cskh@phonestore.com | Hotline: 1800 9999</p>
+    </footer>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <button onclick="('Đã thêm vào giỏ hàng!')">Xác nhận</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
